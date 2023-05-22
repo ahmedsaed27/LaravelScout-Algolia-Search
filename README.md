@@ -15,11 +15,11 @@ This is a sample project demonstrating how to use Laravel Scout and Algolia to i
 3. Run the database migrations.
 4. Import sample data  by seeder.
 5. Open the `.env` file and update the following variables with your Algolia credentials:
-
+```php
     ALGOLIA_APP_ID=your-algolia-app-id
     ALGOLIA_SECRET=your-algolia-secret
     ALGOLIA_SEARCH_KEY=your-algolia-search-key
-    
+```
 6. Configure the `config/scout.php` file with your Algolia credentials.
 8. Add the `Searchable` trait to the model(s) you want to make searchable:
 
