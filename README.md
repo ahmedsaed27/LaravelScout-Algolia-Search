@@ -23,6 +23,7 @@ This is a sample project demonstrating how to use Laravel Scout and Algolia to i
 6. Configure the `config/scout.php` file with your Algolia credentials.
 8. Add the `Searchable` trait to the model(s) you want to make searchable:
 
+ ```php
   use Laravel\Scout\Searchable;
 
   class Product extends Model
@@ -31,6 +32,7 @@ This is a sample project demonstrating how to use Laravel Scout and Algolia to i
 
       // Rest of the model code...
   }
+  ```
   
 9. Run the indexing command to populate the search index:
   $ php artisan scout:import
