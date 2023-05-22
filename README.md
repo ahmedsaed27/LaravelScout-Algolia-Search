@@ -35,6 +35,10 @@ This is a sample project demonstrating how to use Laravel Scout and Algolia to i
   ```
   
 9. Run the indexing command to populate the search index:
+  ```
   $ php artisan scout:import
+  ```
 10. searches using the `search()` method on your model:
-  $results = Model::search('keyword')->get();
+ ```php
+  $results = Product::search('keyword')->get();
+  ```
